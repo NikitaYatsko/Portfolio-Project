@@ -1,0 +1,36 @@
+.promo_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+
+
+  &_content {
+    text-align: center;
+
+    &_text {
+      color: white;
+      font-size: 60px;
+    }
+
+    button {
+      font-size: 20px;
+      border-radius: 10px;
+      margin-top: 30px;
+      cursor: pointer;
+      width: 200px;
+      height: 50px;
+      border: none;
+      background-color: white;
+
+      &:hover {
+        background-color: #252424;
+        color: aqua;
+        transition: 0.2s;
+      }
+    }
+  }
+
+
+}

@@ -1,0 +1,5 @@
+# Игнорировать файл конфигурации Prepros
+prepros.config
+
+# Игнорировать каталог конфигураций IDE (IntelliJ IDEA, WebStorm и др.)
+.idea/

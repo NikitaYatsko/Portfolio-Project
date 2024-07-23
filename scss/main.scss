@@ -1,0 +1,31 @@
+@font-face {
+  font-family: Stolzl;
+  src: url("../fonts/stolzl_regular.otf");
+}
+
+.wallpaper {
+  background-image: url("../img/bf33ef827078a30fde2b87c2d9b46485.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+* {
+  font-family: Stolzl;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  display: block;
+  margin: 0 auto;
+}
+
+@import "blocks/_header.scss";
+@import "blocks/_promosection.scss";
+
+
+
