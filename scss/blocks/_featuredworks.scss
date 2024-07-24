@@ -1,0 +1,64 @@
+.featured_work {
+  padding: 20px 20px;
+
+  &_title {
+    text-align: center;
+    color: black;
+  }
+
+  &_wrapper {
+
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+
+    &_item {
+      padding: 20px 20px;
+      text-align: center;
+
+      h3 {
+        margin-top: 20px;
+      }
+
+      .img_box {
+        max-width: 500px;
+        height: 400px;
+        position: relative;
+
+        p {
+          color: white;
+          width: inherit;
+          position: absolute;
+          bottom: 10px;
+        }
+
+        img {
+          width: inherit;
+          height: inherit;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 565px) {
+  .img_box {
+    max-width: 400px !important;
+    height: 300px !important;
+
+    p {
+      font-size: 12px;
+    }
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .img_box {
+    max-width: 350px !important;
+    height: 200px !important;
+
+    p {
+      font-size: 10px;
+    }
+  }
+}
