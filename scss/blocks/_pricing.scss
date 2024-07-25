@@ -1,0 +1,37 @@
+.prising-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    margin-top: 40px;
+    max-width: 1100px;
+    max-height: 1000;
+
+    &_case{
+        width: 300px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: rgb(244, 244, 244);
+        text-align:center ;
+        h3{
+            font-size: 16px;
+        }
+        p{
+            font-size: 12px;
+        }
+
+    }
+    &_case:nth-of-type(2){
+        background-color: rgb(46, 46, 46);
+        color: rgb(224, 224, 224);
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .prising-wrapper{
+        flex-direction: column;
+        gap: 20px;
+    }
+}

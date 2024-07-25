@@ -1,0 +1,20 @@
+.prising-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  margin-top: 40px;
+  min-width: 1100px;
+  min-height: 1000;
+}
+.prising-wrapper_case {
+  width: 200px;
+  height: 300px;
+  background-color: red;
+}
+.prising-wrapper_case:nth-of-type(2) {
+  background-color: black;
+}
