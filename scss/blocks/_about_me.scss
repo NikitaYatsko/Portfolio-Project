@@ -68,6 +68,9 @@
   }
 
   @media screen and (max-width: 790px) {
+    hr{
+      margin-top: 20px;
+    }
     .about_me-wrapper {
       flex-wrap: wrap;
       justify-content: center;
