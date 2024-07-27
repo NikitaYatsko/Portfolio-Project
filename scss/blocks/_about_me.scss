@@ -2,7 +2,7 @@
   h2 {
     text-align: center;
     color: black;
-    margin-top: 50px;
+    padding-top: 50px;
   }
 
   .about_me-wrapper {
@@ -80,7 +80,7 @@
 
   @media screen and (max-width: 790px) {
     hr{
-      margin-top: 20px;
+      padding-top: 20px;
     }
     .about_me-wrapper {
       flex-wrap: wrap;

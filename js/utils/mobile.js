@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+export function mobileMenu() {
     const header = document.querySelector('.header');
     const mobileMenu = document.querySelector('.mobile_menu');
     const mobileButton = document.querySelector('.burger_menu');
@@ -14,4 +14,4 @@ document.addEventListener("DOMContentLoaded", function () {
             header.style.backgroundColor = 'transparent';
         }
     });
-});
+}
