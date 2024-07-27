@@ -22,16 +22,27 @@
 
       &_contacts {
         position: absolute;
-        top: 380px;
+        top: 359px;
         left: 30px;
         display: flex;
         justify-content: space-between;
         gap: 20px;
 
         &_image {
-          background-color: rgb(165, 96, 96);
-          height: 25px;
-          width: 25px;
+          cursor: pointer;
+          border-radius: 6px;
+          background-color: black;
+          height: 40px;
+          width: 40px;
+          transition: 0.3s;
+          &_img{
+            width: 100%;
+            height: 100%; 
+          }
+        }
+        &_image:hover{
+          height: 45px;
+          width: 45px;
         }
       }
 
@@ -133,6 +144,12 @@
   @media screen and (max-width: 490px) {
 
     .about_me-wrapper {
+      &_text-conteiner {
+
+        &_text {
+          padding-top: 0px;
+        }
+      }
       &_photo {
         height: 320px;
       }
@@ -143,6 +160,12 @@
   @media screen and (max-width: 320px) {
 
     .about_me-wrapper {
+      &_text-conteiner {
+
+        &_text {
+          padding-top: 0px;
+        }
+      }
 
       &_photo {
         height: 270px;
