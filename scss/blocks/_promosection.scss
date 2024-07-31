@@ -23,11 +23,13 @@
       height: 50px;
       border: none;
       background-color: white;
+      transition: 0.2s;
 
       &:hover {
-        background-color: #252424;
-        color: aqua;
-        transition: 0.2s;
+
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
       }
     }
   }
