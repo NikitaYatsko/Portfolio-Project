@@ -10,18 +10,31 @@
   background-position: center;
 
 }
+body{
+
+}
 
 * {
+
   font-family: Stolzl;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+
 }
 
 .container {
   max-width: 1200px;
   display: block;
   margin: 0 auto;
+}
+
+*:target {
+  scroll-margin-top: 150px;
+}
+
+.anchor {
+  text-decoration: none;
 }
 
 @import "blocks/_header.scss";

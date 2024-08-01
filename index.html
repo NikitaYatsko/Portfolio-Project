@@ -11,18 +11,20 @@
     <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/>
 </head>
 <body>
-<div class="wallpaper">
+<div class="wallpaper" id="promo">
     <header class="header">
         <div class="burger_menu">
             <div class="burger"></div>
         </div>
         <nav class="header_navbar">
             <ul class="list_parent">
-                <li class="list_parent_item">Главная</li>
-                <li class="list_parent_item">Обо мне</li>
-                <li class="list_parent_item">Мои работы</li>
-                <li class="list_parent_item">Прайсинг</li>
-                <li class="list_parent_item modal_trigger">Связаться со мной</li>
+                <ul class="list_parent">
+                    <a href="#promo" class="anchor"><li class="list_parent_item">Главная</li></a>
+                    <a href="#about_me" class="anchor"><li class="list_parent_item">Обо мне</li></a>
+                    <a href="#featured_work" class="anchor"><li class="list_parent_item">Мои работы</li></a>
+                    <a href="#pricing" class="anchor"><li class="list_parent_item">Прайсинг</li></a>
+                    <li class="list_parent_item modal_trigger anchor" >Связаться со мной</li>
+                </ul>
             </ul>
         </nav>
         <div class="contacts">
@@ -49,7 +51,7 @@
 
 <section class="about_me">
     <div class="container">
-        <h2>- Обо мне -</h2>
+        <h2 id="about_me">- Обо мне -</h2>
         <div class="about_me-wrapper">
             <div class="about_me-wrapper_photo">
                 <img src="/img/photo_2024-07-28_15-32-48.jpg" class="about_me-wrapper_photo_image">
@@ -59,7 +61,6 @@
                     <h2>Lorem ipsum dolor sit amet consectetur </h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt neque quam ut tempora sint
                         voluptatibus provident reprehenderit nesciunt vero iusto, minima suscipit.</p>
-
                 </div>
                 <div class="about_me-wrapper_text-conteiner_contacts">
                     <div class="about_me-wrapper_text-conteiner_contacts_image">
@@ -80,12 +81,13 @@
 
 <section class="featured_work">
     <div class="container">
-        <h2 class="featured_work_title">- Мои Работы -</h2>
+        <h2 class="featured_work_title" id="featured_work">- Мои Работы -</h2>
         <div class="featured_work_wrapper">
             <div class="featured_work_wrapper_item">
                 <div class="img_box">
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid amet commodi, cumque dicta
+                    <p class="hide_text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid amet
+                        commodi, cumque dicta
                         dignissimos dolorem doloremque dolorum earum eius enim, et eveniet exercitationem fuga hic illo
                         in ipsum iste laboriosam laborum libero nobis nostrum qui quia quisquam rerum similique sunt
                         velit vero voluptates. At dolores laboriosam nemo odit suscipit!</p>
@@ -96,12 +98,13 @@
             </div>
             <div class="featured_work_wrapper_item">
                 <div class="img_box">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid amet commodi,
+                    <p class="hide_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid amet
+                        commodi,
                         cumque dicta
                         dignissimos dolorem doloremque dolorum earum eius enim, et eveniet exercitationem fuga hic illo
                         in ipsum iste laboriosam laborum libero nobis nostrum qui quia quisquam rerum similique sunt
                         velit vero voluptates. At dolores laboriosam nemo odit suscipit!"</p>
-                    <img src="img/3d-render-spotlights-grunge-brick-wall.jpg" alt="">
+                    <img class="image_for_hover" src="img/3d-render-spotlights-grunge-brick-wall.jpg" alt="">
                 </div>
                 <h3>Имя Клиента</h3>
             </div>
@@ -111,20 +114,22 @@
             <div class="featured_work_wrapper_item">
                 <div class="img_box">
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid amet commodi, cumque dicta
+                    <p class="hide_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid amet
+                        commodi, cumque dicta
                         dignissimos dolorem doloremque dolorum earum eius enim, et eveniet exercitationem fuga hic illo
                         in ipsum iste laboriosam laborum libero nobis nostrum qui quia quisquam rerum similique sunt
                         velit vero voluptates. At dolores laboriosam nemo odit suscipit!</p>
-                    <img src="img/3d-render-spotlights-grunge-brick-wall.jpg" alt="">
+                    <img class="image_for_hover" src="img/3d-render-spotlights-grunge-brick-wall.jpg" alt="">
                 </div>
                 <h3>Имя Клиента</h3>
             </div>
             <div class="featured_work_wrapper_item">
                 <div class="img_box">
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid amet commodi, cumque dicta
+                    <p class="hide_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid amet
+                        commodi, cumque dicta
                         dignissimos dolorem doloremque dolorum earum eius enim.!</p>
-                    <img src="img/3d-render-spotlights-grunge-brick-wall.jpg" alt="">
+                    <img class="image_for_hover" src="img/3d-render-spotlights-grunge-brick-wall.jpg" alt="">
                 </div>
                 <h3>Имя Клиента</h3>
             </div>
@@ -135,7 +140,7 @@
 
 <section class="pricing">
     <div class="container">
-        <h2 class="pricing-title">-Pricing-</h2>
+        <h2 class="pricing-title" id="pricing">- Прайсинг -</h2>
         <div class="pricing-wrapper">
             <div class="pricing-wrapper_case">
                 <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
@@ -230,19 +235,13 @@
 <div class="mobile_menu">
     <nav class="mobile_menu_nav">
         <ul class="mobile_list">
-            <li class="menu_item">Главная</li>
-            <li class="menu_item">Обо мне</li>
-            <li class="menu_item">Мои работы</li>
+            <a href="#promo" class="anchor"><li class="menu_item">Главная</li></a>
+            <a href="#about_me" class="anchor"><li class="menu_item">Обо мне</li></a>
+            <a href="#featured_work" class="anchor"><li class="menu_item">Мои работы</li></a>
+            <a href="#pricing" class="anchor"><li class="menu_item">Прайсинг</li></a>
             <li class="menu_item modal_trigger">Связаться со мной</li>
         </ul>
     </nav>
-    <div class="mobile_contacts">
-        <ul class="mobile_contacts_list">
-            <li>F</li>
-            <li>T</li>
-            <li>VK</li>
-        </ul>
-    </div>
 </div>
 
 <div class="modal_overlay hide">
@@ -269,7 +268,6 @@
 </div>
 
 <script type="module" src="js/main.js"></script>
-<script src="js/utils/mobile.js"></script>
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="/slick/slick.min.js"></script>
 <script src="js/slider.js"></script>

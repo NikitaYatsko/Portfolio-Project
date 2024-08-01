@@ -35,12 +35,14 @@
           height: 40px;
           width: 40px;
           transition: 0.3s;
-          &_img{
+
+          &_img {
             width: 100%;
-            height: 100%; 
+            height: 100%;
           }
         }
-        &_image:hover{
+
+        &_image:hover {
           height: 45px;
           width: 45px;
         }
@@ -66,8 +68,8 @@
     }
 
     &_photo {
-      width: 520px;
-      height: 400px;
+      width: 440px;
+      height: 420px;
       padding: 20px 20px;
 
       &_image {
@@ -79,7 +81,7 @@
   }
 
   @media screen and (max-width: 790px) {
-    hr{
+    hr {
       margin-top: 20px;
     }
     .about_me-wrapper {
@@ -150,8 +152,10 @@
           padding-top: 0px;
         }
       }
+
       &_photo {
         height: 320px;
+        width: 380px;
       }
     }
   }
