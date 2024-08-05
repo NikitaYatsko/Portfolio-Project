@@ -3,13 +3,6 @@
   src: url("../fonts/stolzl_regular.otf");
 }
 
-.wallpaper {
-  background-image: url("../img/bf33ef827078a30fde2b87c2d9b46485.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-
-}
 
 
 * {
@@ -21,12 +14,6 @@
   scroll-behavior: smooth;
 }
 
-.container {
-  max-width: 1200px;
-  display: block;
-  margin: 0 auto;
-}
-
 *:target {
   scroll-margin-top: 150px;
 }
@@ -34,6 +21,22 @@
 .anchor {
   text-decoration: none;
 }
+
+.wallpaper {
+  background-image: url("../img/bf33ef827078a30fde2b87c2d9b46485.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+
+.container {
+  max-width: 1200px;
+  display: block;
+  margin: 0 auto;
+}
+
 
 @import "blocks/_header.scss";
 @import "blocks/_promosection.scss";
